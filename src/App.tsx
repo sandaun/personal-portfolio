@@ -22,10 +22,10 @@ export function App() {
     <main className="min-h-screen bg-navy relative">
       <div
         ref={cursorRef}
-        className="fixed pointer-events-none z-50 w-64 h-64 rounded-full opacity-20 mix-blend-screen transition-transform duration-100 ease-out"
+        className="fixed pointer-events-none z-50 w-[600px] h-[600px] rounded-full transition-transform duration-100 ease-out"
         style={{
-          background: 'radial-gradient(circle, rgba(100,255,218,0.3) 0%, rgba(100,255,218,0) 70%)',
-          transform: `translate(${mousePosition.x - 128}px, ${mousePosition.y - 128}px)`,
+          background: 'radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 80%)',
+          transform: `translate(${mousePosition.x - 300}px, ${mousePosition.y - 300}px)`,
         }}
       />
       
