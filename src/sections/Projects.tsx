@@ -48,7 +48,7 @@ export function Projects() {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative grid grid-cols-1 md:grid-cols-[140px_1fr] gap-4 md:gap-8 p-4 -mx-4 rounded-lg transition-all duration-300 hover:bg-light-navy/50 hover:shadow-[0_0_30px_rgba(100,255,218,0.05)]"
+            className="portfolio-card group relative grid grid-cols-1 md:grid-cols-[140px_1fr] gap-4 md:gap-8 p-4 -mx-4 rounded-lg"
           >
             <div className="text-sm font-medium text-slate uppercase tracking-wider pt-1">
               Selected work

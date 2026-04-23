@@ -12,25 +12,43 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    period: 'Current',
-    title: 'Senior Frontend & Mobile Developer',
+    period: 'Apr 2024 — Present',
+    title: 'Software Engineer',
     company: 'AILY LABS',
     companyUrl: 'https://www.ailylabs.com',
     description:
-      'Build product interfaces for an AI decision intelligence platform used by enterprise teams. Work at the intersection of product, design, and engineering to turn complex workflows into clear user experiences.',
-    tags: ['TypeScript', 'React', 'React Native', 'AI Products', 'Product Engineering'],
+      'Develop the Aily Labs app across iOS, Android, and web. Work on the Design System and Core team, maintaining shared UI foundations while collaborating with product, design, and engineering on end-to-end feature delivery.',
+    tags: ['React Native', 'React', 'TypeScript', 'Design Systems', 'Jest', 'Appium'],
   },
   {
-    period: 'Previous',
+    period: 'Sep 2021 — Mar 2024',
+    title: 'Mobile React Native Engineer',
+    company: 'YEGO',
+    companyUrl: 'https://www.yego.com',
+    description:
+      'Developed and deployed the YEGO customer app and internal Ranger app for iOS and Android. Migrated components from JavaScript to TypeScript and contributed to back-office tooling for vehicle operations.',
+    tags: ['React Native', 'TypeScript', 'React', 'Redux', 'React Context', 'Mobile Apps'],
+  },
+  {
+    period: 'Jan 2019 — Aug 2021',
+    title: 'Fullstack Developer',
+    company: 'Emjoy',
+    companyUrl: 'https://www.crunchbase.com/organization/emjoy',
+    description:
+      'Built and shipped the Emjoy mobile app with React Native, maintained state with MobX, and developed internal back-office tools with React, Firebase Realtime Database, and Firebase Cloud Functions.',
+    tags: ['React Native', 'React', 'MobX', 'Firebase', 'Node.js', 'Detox'],
+  },
+  {
+    period: 'Jan 2017 — Jan 2019',
     title: 'Product Manager',
     company: 'Intesis Software',
     companyUrl: 'https://www.intesis.com',
     description:
-      'Worked across product, training, support, and customer-facing technical requests. This experience shaped a practical engineering style focused on accuracy, speed, and customer context.',
-    tags: ['Product Management', 'Customer Context', 'Technical Support', 'Training'],
+      'Defined and specified new products and features while working closely with R&D through agile methodologies. This product background still shapes how I connect technical execution with user and business needs.',
+    tags: ['Product Management', 'Agile', 'R&D Collaboration', 'Product Strategy'],
   },
   {
-    period: '2018 — 2019',
+    period: 'May 2019',
     title: 'Full-Stack Web Development',
     company: 'Ironhack',
     companyUrl: 'https://www.ironhack.com',
@@ -57,7 +75,7 @@ export function Experience() {
             href={exp.companyUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative grid grid-cols-1 md:grid-cols-[140px_1fr] gap-4 md:gap-8 p-4 -mx-4 rounded-lg transition-all duration-300 hover:bg-light-navy/50 hover:shadow-[0_0_30px_rgba(100,255,218,0.05)]"
+            className="portfolio-card group relative grid grid-cols-1 md:grid-cols-[140px_1fr] gap-4 md:gap-8 p-4 -mx-4 rounded-lg"
           >
             <div className="text-sm font-medium text-slate uppercase tracking-wider pt-1">
               {exp.period}

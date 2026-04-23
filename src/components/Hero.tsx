@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { BookOpen, Codepen, Github, Instagram, Linkedin } from 'lucide-react'
 
 const navItems = [
@@ -17,11 +17,31 @@ const socialLinks = [
 
 export function Hero() {
   const [activeSection, setActiveSection] = useState('about')
+  const pendingSectionRef = useRef<string | null>(null)
+  const pendingSectionTimeoutRef = useRef<number | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['about', 'experience', 'projects']
       const scrollPosition = window.scrollY + 200
+      const isAtBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+
+      if (isAtBottom) {
+        pendingSectionRef.current = null
+        setActiveSection(sections[sections.length - 1])
+        return
+      }
+
+      if (pendingSectionRef.current) {
+        const pendingElement = document.getElementById(pendingSectionRef.current)
+
+        if (pendingElement && Math.abs(pendingElement.offsetTop - window.scrollY) < 24) {
+          pendingSectionRef.current = null
+        } else {
+          return
+        }
+      }
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -36,7 +56,13 @@ export function Hero() {
     }
 
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+
+      if (pendingSectionTimeoutRef.current) {
+        window.clearTimeout(pendingSectionTimeoutRef.current)
+      }
+    }
   }, [])
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -44,7 +70,17 @@ export function Hero() {
     const targetId = href.replace('#', '')
     const element = document.getElementById(targetId)
     if (element) {
+      if (pendingSectionTimeoutRef.current) {
+        window.clearTimeout(pendingSectionTimeoutRef.current)
+      }
+
+      pendingSectionRef.current = targetId
+      setActiveSection(targetId)
       element.scrollIntoView({ behavior: 'smooth' })
+
+      pendingSectionTimeoutRef.current = window.setTimeout(() => {
+        pendingSectionRef.current = null
+      }, 800)
     }
   }
 
@@ -68,14 +104,14 @@ export function Hero() {
                 <a
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className={`group flex items-center gap-4 text-sm font-bold uppercase tracking-widest transition-colors ${
+                  className={`group flex items-center gap-4 text-sm font-bold uppercase tracking-widest transition-colors duration-150 ease-out ${
                     activeSection === item.href.replace('#', '')
                       ? 'text-lightest-slate'
                       : 'text-slate hover:text-lightest-slate'
                   }`}
                 >
                   <span
-                    className={`h-px transition-all duration-300 ${
+                    className={`h-px transition-all duration-150 ease-out ${
                       activeSection === item.href.replace('#', '')
                         ? 'w-16 bg-lightest-slate'
                         : 'w-8 bg-slate group-hover:w-16 group-hover:bg-lightest-slate'
