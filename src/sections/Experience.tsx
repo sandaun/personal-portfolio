@@ -47,15 +47,6 @@ const experiences: ExperienceItem[] = [
       'Defined and specified new products and features while working closely with R&D through agile methodologies. This product background still shapes how I connect technical execution with user and business needs.',
     tags: ['Product Management', 'Agile', 'R&D Collaboration', 'Product Strategy'],
   },
-  {
-    period: 'May 2019',
-    title: 'Full-Stack Web Development',
-    company: 'Ironhack',
-    companyUrl: 'https://www.ironhack.com',
-    description:
-      'Built a foundation in modern JavaScript application development, including React, TypeScript, Node.js, Express, MongoDB, API design, Git collaboration, and deployment practices.',
-    tags: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'Express', 'MongoDB'],
-  },
 ]
 
 export function Experience() {
