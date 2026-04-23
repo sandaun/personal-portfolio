@@ -111,18 +111,18 @@ export function Hero() {
   return (
     <div className="flex flex-col h-full">
       <div>
-        <h1 className="text-4xl md:text-5xl lg:text-[2.75rem] font-bold text-lightest-slate tracking-tight mb-4">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-lightest-slate">
           Oriol Carbó
         </h1>
-        <h2 className="text-xl md:text-2xl font-medium text-lightest-slate mb-4">
+        <h2 className="mt-3 text-lg sm:text-xl font-medium tracking-tight text-lightest-slate">
           Senior Frontend & Mobile Developer
         </h2>
-        <p className="text-lg text-slate max-w-md mb-12">
+        <p className="mt-4 max-w-xs leading-normal text-slate">
           I build product-focused React and React Native experiences for teams turning complex ideas into usable software.
         </p>
 
         <nav className="hidden lg:block">
-          <ul className="space-y-4">
+          <ul className="mt-16 w-max space-y-4">
             {navItems.map((item) => (
               <li key={item.name}>
                 <a

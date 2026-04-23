@@ -78,7 +78,7 @@ export function Experience() {
                   {exp.title} · {exp.company}
                   <ArrowUpRight
                     size={16}
-                    className="opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="translate-y-px opacity-0 transition-all duration-150 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
                   />
                 </span>
               </h3>
@@ -114,7 +114,7 @@ export function Experience() {
             View LinkedIn Profile
             <ArrowUpRight
               size={16}
-              className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+              className="translate-y-px transition-transform duration-150 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             />
           </a>
         </div>

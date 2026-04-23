@@ -60,7 +60,7 @@ export function Projects() {
                   {project.title}
                   <ArrowUpRight
                     size={16}
-                    className="opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="translate-y-px opacity-0 transition-all duration-150 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
                   />
                 </span>
               </h3>
