@@ -34,7 +34,7 @@ const navItems = [
 ]
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/oriolcarbo', icon: GitHubIcon },
+  { name: 'GitHub', href: 'https://github.com/sandaun', icon: GitHubIcon },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/oriolcarbo/', icon: LinkedInIcon },
   { name: 'Instagram', icon: InstagramIcon },
 ] satisfies Array<{ name: string; href?: string; icon: SocialIcon }>
