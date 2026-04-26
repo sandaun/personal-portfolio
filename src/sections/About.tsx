@@ -32,18 +32,9 @@ export function About() {
         </p>
 
         <p>
-          My background combines hands-on engineering with product and client-facing experience.
-          I trained in modern web development at{' '}
-          <a
-            href="https://www.ironhack.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-lightest-slate hover:text-green transition-colors font-medium"
-          >
-            Ironhack
-          </a>{' '}
-          across the MERN stack, and I also hold a PMC-I certification from Pragmatic Marketing.
-          That mix keeps me grounded in both code quality and product outcomes.
+          My background is rooted in development: shipping mobile apps, building web tooling,
+          maintaining shared UI foundations, and working with product teams without losing focus
+          on code quality, testing, and delivery.
         </p>
 
         <p>
