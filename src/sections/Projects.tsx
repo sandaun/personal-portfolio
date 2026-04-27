@@ -20,11 +20,13 @@ const projects: Project[] = [
     imageAlt: 'Aily ProX mobile product screen',
   },
   {
-    title: 'Personal GitHub Repository',
+    title: 'YEGO Mobility App',
     description:
-      'A place for ongoing coding projects and experiments, started alongside the move into full-stack JavaScript and kept as a practical record of learning and shipping.',
-    link: 'https://github.com/sandaun',
-    tags: ['JavaScript', 'TypeScript', 'React', 'Node.js'],
+      'React Native work on YEGO’s public mobility app and internal operational tools, supporting electric motorbike sharing across cities in Spain and France.',
+    link: 'https://play.google.com/store/apps/details?id=com.getyugo.app',
+    tags: ['React Native', 'TypeScript', 'React', 'Redux', 'Mobile Apps'],
+    image: '/images/projects/yego-mobility.webp',
+    imageAlt: 'YEGO Mobility app store screenshot',
   },
   {
     title: 'Portfolio Website',

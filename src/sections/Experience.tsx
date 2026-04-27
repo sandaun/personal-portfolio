@@ -41,8 +41,8 @@ const experiences: ExperienceItem[] = [
   {
     period: 'Jan 2017 — Jan 2019',
     title: 'Product Manager',
-    company: 'Intesis Software',
-    companyUrl: 'https://www.intesis.com',
+    company: 'HMS Networks',
+    companyUrl: 'https://www.hms-networks.com',
     description:
       'Defined and specified new products and features while working closely with R&D through agile methodologies. This product background still shapes how I connect technical execution with user and business needs.',
     tags: ['Product Management', 'Agile', 'R&D Collaboration', 'Product Strategy'],

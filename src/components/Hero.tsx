@@ -27,6 +27,8 @@ function InstagramIcon(props: SVGProps<SVGSVGElement>) {
   )
 }
 
+// Instagram is intentionally hidden for now.
+// To restore it, add: { name: 'Instagram', icon: InstagramIcon }
 const navItems = [
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
@@ -36,7 +38,6 @@ const navItems = [
 const socialLinks = [
   { name: 'GitHub', href: 'https://github.com/sandaun', icon: GitHubIcon },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/oriolcarbo/', icon: LinkedInIcon },
-  { name: 'Instagram', icon: InstagramIcon },
 ] satisfies Array<{ name: string; href?: string; icon: SocialIcon }>
 
 export function Hero() {
@@ -152,15 +153,6 @@ export function Hero() {
       <div className="flex gap-6 mt-auto pt-24">
         {socialLinks.map((link) => {
           const Icon = link.icon
-          const className = 'text-slate hover:text-green hover:-translate-y-1 transition-all duration-300'
-
-          if (!('href' in link)) {
-            return (
-              <span key={link.name} aria-label={link.name} className={className}>
-                <Icon className="h-6 w-6" />
-              </span>
-            )
-          }
 
           return (
             <a
@@ -169,7 +161,7 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.name}
-              className={className}
+              className="text-slate hover:text-green hover:-translate-y-1 transition-all duration-300"
             >
               <Icon className="h-6 w-6" />
             </a>
