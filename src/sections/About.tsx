@@ -11,9 +11,10 @@ export function About() {
       <div className="space-y-4 text-slate">
         <p>
           I'm a frontend and mobile developer based in Barcelona, focused on building clear,
-          reliable product experiences with React, React Native, and TypeScript. I like work
-          that sits close to users, where engineering decisions have to hold up in real product
-          conversations.
+          reliable, and maintainable product experiences with React, React Native, and
+          TypeScript. I enjoy working close to the product, where good engineering means
+          understanding user needs, making pragmatic decisions, and shipping software that
+          holds up in real use.
         </p>
 
         <p>
@@ -26,21 +27,22 @@ export function About() {
           >
             AILY LABS
           </a>
-          , a decision intelligence company bringing applied AI into enterprise workflows. That
-          context fits how I like to build: practical interfaces, fast feedback loops, and a
-          strong bias toward software that helps people make better decisions.
+          , a decision intelligence company bringing applied AI into enterprise workflows. It
+          is a context where interface quality, data clarity, and fast iteration matter, and
+          where frontend work plays an important role in turning complex systems into usable
+          products.
         </p>
 
         <p>
-          My background is rooted in development: shipping mobile apps, building web tooling,
-          maintaining shared UI foundations, and working with product teams without losing focus
-          on code quality, testing, and delivery.
+          My work is rooted in development: building mobile apps, web tools, shared UI
+          foundations, and product-facing features with attention to code quality, testing,
+          maintainability, and delivery.
         </p>
 
         <p>
           I work comfortably in English, Catalan, and Spanish, and I can handle basic German.
-          That helps me move naturally between local teams, international product discussions,
-          and the kind of cross-functional collaboration that makes software better.
+          That helps me collaborate naturally with local and international teams, across
+          engineering, product, and business conversations.
         </p>
       </div>
     </section>

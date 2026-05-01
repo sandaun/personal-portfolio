@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Oriol Carbó">
+  <rect width="64" height="64" rx="14" fill="#0f172a" />
+  <path
+    d="M32 12c11.05 0 20 8.95 20 20s-8.95 20-20 20-20-8.95-20-20 8.95-20 20-20Zm0 8c-6.63 0-12 5.37-12 12s5.37 12 12 12 12-5.37 12-12-5.37-12-12-12Z"
+    fill="#5eead4"
+  />
+</svg>

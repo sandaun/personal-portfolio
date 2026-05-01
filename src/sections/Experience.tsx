@@ -33,7 +33,7 @@ const experiences: ExperienceItem[] = [
     period: 'Jan 2019 — Aug 2021',
     title: 'Fullstack Developer',
     company: 'Emjoy',
-    companyUrl: 'https://www.crunchbase.com/organization/emjoy',
+    companyUrl: 'https://www.crunchbase.com/organization/emjoy-barcelona',
     description:
       'Built and shipped the Emjoy mobile app with React Native, maintained state with MobX, and developed internal back-office tools with React, Firebase Realtime Database, and Firebase Cloud Functions.',
     tags: ['React Native', 'React', 'MobX', 'Firebase', 'Node.js', 'Detox'],
