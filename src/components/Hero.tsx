@@ -108,7 +108,7 @@ export function Hero() {
           Oriol Carbó
         </h1>
         <h2 className="mt-3 text-lg sm:text-xl font-medium tracking-tight text-lightest-slate">
-          Senior Frontend & Mobile Developer
+          Senior Product Software Engineer
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-slate">
           I build product-focused React and React Native experiences that turn complex,
